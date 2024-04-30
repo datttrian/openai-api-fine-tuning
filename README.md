@@ -1,28 +1,47 @@
-# LeetCode
+# OpenAI API: Fine-Tuning
+This is the repository for the LinkedIn Learning course `OpenAI API: Fine-Tuning`. The full course is available from [LinkedIn Learning][lil-course-url].
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/datttrian/leetcode)
+![lil-thumbnail-url]
 
-[![Build Status](https://github.com/datttrian/leetcode/actions/workflows/main.yml/badge.svg)](https://github.com/datttrian/leetcode/actions/workflows/main.yml)
-[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+Fine-tuning GPT models allows you to submit examples of the types of responses the AI system should provide based on user input. This is a great way of ensuring the system speaks in a voice and tone of your choosing, and eliminates the need for providing a description of the agent before each prompt.
 
-<!-- |Difficulty|Problem                                                                                                                     |Complexity                                      |
-|----------|----------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-|Medium    |[9. Palindrome Number](https://leetcode.com/problems/palindrome-number/solutions/5060268/olog10n-o1/)                       |O(log10(n)), O(1)                               |
-|Medium    |[12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/solutions/5060397/o1-o1/)                             |O(1), O(1)                                      |
-|Medium    |[13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/solutions/5060356/on-o1/)                             |O(n), O(1)                                      |z -->
+OpenAI’s API enables you to submit your own fine-tuning training data. In this course, Senior Staff Instructor and AI whisperer Morten Rand-Hendriksen shows you how to fine-tune OpenAI’s GPT models by uploading your own data to create a unique custom model.
 
-|Difficulty|Problem                                                                                                                         |Approach                                      |Complexity                                      |
-|----------|--------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|------------------------------------------------|
-|Hard      |4. Median of Two Sorted Arrays                                                                                                  |Binary Search                                 |O(log(min(n, m))), O(n)                         |
-|Easy      |[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/solutions/5089933/on-o1/)  |Greedy                                        |O(n), O(1)                                      |
-|Easy      |[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/solutions/5089939/on-on//) |1-D Dynamic Programming                       |O(n), O(1)                                      |
-|Easy      |[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/solutions/5077384/on-on/)                                |Brute Force                                   |O(n), O(n)                                      |
-|Easy      |[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/solutions/5077373/on-o1/)                                |Two Pointers                                  |O(n), O(1)                                      |
-|Medium    |[217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/solutions/5064039/on-on/)                            |Hash Set                                      |O(n), O(n)                                      |
-|Medium    |[217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/solutions/5064035/on-log-n-o1/)                      |Sorting                                       |O(n log n), O(1)                                |
-|Medium    |217. Contains Duplicate                                                                                                         |Brute Force                                   |O(n^2), O(1)                                    |
-|Easy      |[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/solutions/5069127/on-o1/)                                      |Arrays                                        |O(n), O(1)                                      |
-|Easy      |[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/solutions/5069036/on-on/)                                      |Hash Map                                      |O(n), O(n)                                      |
-|Easy      |[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/solutions/5069033/on-log-n-on/)                                |Sorting                                       |O(n log n), O(n)                                |
-|Medium    |[274. H-Index](https://leetcode.com/problems/h-index/solutions/5073117/on-log-n-o1/)                                            |Sorting                                       |O(n log n), O(1)                                |
-|Medium    |[274. H-Index](https://leetcode.com/problems/h-index/solutions/5073130/on-on/)                                                  |Linear Search                                 |O(n), O(n)                                      |
+This course takes you through the process of preparing your data, submitting the data for fine-tuning through the OpenAI API, and using the fine-tuned model for regular interactions with the AI API. 
+
+Fine-tuning GPT provides better performance, enables you to shorten your prompts, and keeps the AI system on track and on target with your business content and context.
+
+_See the readme file in the main branch for updated instructions and information._
+
+## Instructions
+This repository holds example data and two Jupyter Notebooks:
+- `create-training-data/create-training-data.ipynb` demonstrates how to prepare data for fine-tuning
+- `fine-tune-flow.ipynb` demonstrates how to perform fine-tuning through the OpenAI API.
+
+The first time you run a block in a Jupyter Notebook, the environment will ask you to pick an environment. Follow the instructions and pick the first available Python environment. 
+
+NOTE: The first code block will take a while to load because the environment has to load first.
+
+## Installing
+It is recommended you run these exercise files in GitHub Codespaces. This gives you a pre-configured Python environment for the Jupyter Notebooks to run.
+To use the exercise files, follow these steps:
+1. In the root folder, rename the file `env-template` to `.env`.
+2. Go to [https://platform.openai.com/api-keys](https://platform.openai.com/api-keys).
+3. Generate a new key and copy the key to your clipboard.
+4. In `.env` add the key without quotes or parentheses.
+
+### Instructor
+
+Morten Rand-Hendriksen
+
+Senior Staff Instructor, Speaker, Web Designer, and Software Developer
+
+                            
+
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/morten-rand-hendriksen?u=104).
+
+[0]: # (Replace these placeholder URLs with actual course URLs)
+
+[lil-course-url]: https://www.linkedin.com/learning/openai-api-fine-tuning-21058733
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D4D0DAQFE_LhqtfTWIw/learning-public-crop_675_1200/0/1713563299935?e=2147483647&v=beta&t=VFZaYAvNo0s7fvslE_g9JlEjZnX5TwmXyw9x8N4Fhq8
+
